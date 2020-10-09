@@ -1,6 +1,5 @@
 #include "date.h"
 
-
 Date::Date(const int& year, const int& month, const int& day) :
 	Year(year), Month(month), Day(day) {};
 

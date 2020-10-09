@@ -396,16 +396,6 @@ void TestDatabase() {
 		db.Add(d3, "e3");
 		AssertEqual(db.Last(d), Entry({ 2018, 12, 24 }, "e3"), "Db Last 2");
 
-		//// Get last event for date before first event 
-		//try {
-		//	Date d4(2017, 2, 2);
-		//	db.Last(d4);
-		//	Assert(false, "Db Last 3");
-		//}
-		//catch (std::invalid_argument e) {
-		//	// Pass
-		//}
-
 		// Delete event and get last
 		istringstream is("date == 2018-12-24");
 		auto condition = ParseCondition(is);

@@ -10,7 +10,6 @@ std::string ParseEvent(std::istream& is) {
 	return event;
 }
 
-
 void Database::Add(const Date& date, const std::string& event) {
 
 	if (database[date].count(event) == 0)
