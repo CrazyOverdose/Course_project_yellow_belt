@@ -108,6 +108,7 @@ std::shared_ptr<Node> ParseExpression(It& current, It end, unsigned precedence) 
 	return left;
 }
 
+
 std::shared_ptr<Node> ParseCondition(std::istream& is) {
 	auto tokens = Tokenize(is);
 	auto current = tokens.begin();
